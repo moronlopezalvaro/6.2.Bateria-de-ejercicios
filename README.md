@@ -11,3 +11,19 @@ classDiagram
         - validarEmail()
     }
 ```
+
+Ejercicio 2
+```mermaid
+classDiagram
+    class Persona {
+        String nombre
+        String DNI
+    }
+
+    class Estudiante {
+        String numeroExpediente
+        float notaMedia
+    }
+
+    Persona <|-- Estudiante
+```
