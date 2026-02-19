@@ -41,3 +41,12 @@ classDiagram
     %% Agregación (vínculo débil)
     Computadora o-- Raton : usa
 ```
+
+Ejercicio 4
+```mermaid
+classDiagram
+    class CentroComercial
+    class Tienda
+
+    CentroComercial "1" --> "1..*" Tienda : alberga
+```
