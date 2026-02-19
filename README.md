@@ -27,3 +27,17 @@ classDiagram
 
     Persona <|-- Estudiante
 ```
+
+Ejercicio 3
+```mermaid
+classDiagram
+    class Computadora
+    class PlacaBase
+    class Raton
+
+    %% Composición: la PlacaBase no puede existir sin la Computadora
+    Computadora *-- PlacaBase : composición
+
+    %% Agregación: el Raton puede existir independientemente
+    Computadora o-- Raton : agregación
+```
