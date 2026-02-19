@@ -35,9 +35,9 @@ classDiagram
     class PlacaBase
     class Raton
 
-    %% Composición: la PlacaBase no puede existir sin la Computadora
-    Computadora *-- PlacaBase : composición
+    %% Composición (vínculo fuerte)
+    Computadora *-- PlacaBase : contiene
 
-    %% Agregación: el Raton puede existir independientemente
-    Computadora o-- Raton : agregación
+    %% Agregación (vínculo débil)
+    Computadora o-- Raton : usa
 ```
