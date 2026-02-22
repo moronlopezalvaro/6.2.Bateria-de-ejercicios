@@ -31,9 +31,21 @@ classDiagram
 Ejercicio 3
 ```mermaid
 classDiagram
-    class Computadora
-    class PlacaBase
-    class Raton
+    class Computadora {
+        + String marca
+        + String modelo
+        + int memoriaRAM
+    }
+
+    class PlacaBase {
+        + String chipset
+        + String fabricante
+    }
+
+    class Raton {
+        + String tipo
+        + String conexion
+    }
 
     %% Composición (vínculo fuerte)
     Computadora *-- PlacaBase : contiene
@@ -45,8 +57,17 @@ classDiagram
 Ejercicio 4
 ```mermaid
 classDiagram
-    class CentroComercial
-    class Tienda
+    class CentroComercial {
+        + String nombre
+        + String direccion
+        + int numeroPlantas
+    }
+
+    class Tienda {
+        + String nombre
+        + String categoria
+        + double superficie
+    }
 
     CentroComercial "1" --> "1..*" Tienda : alberga
 ```
